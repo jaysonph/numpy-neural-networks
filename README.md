@@ -12,8 +12,17 @@ This repository is my hobby project. It consists of low-level implementation of 
 ### Scalar form
 <p align="center">
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;&space;z_{k}^{(last)}=\frac{\partial&space;E}{\partial&space;z_{k}^{(last)}}" /><br>
-  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;z_{k}^{(L)}=\frac{\partial&space;E}{\partial&space;z_{k}^{(L)}}=\delta&space;a_{k}^{(L)}\cdot&space;h^{'}(z_{k}^{(L)})" /><br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;z_{k}^{(L)}=\frac{\partial&space;E}{\partial&space;z_{k}^{(L)}}=\delta&space;a_{k}^{(L)}\cdot&space;h^{(L)^{'}}(z_{k}^{(L)})" /><br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;a_{k}^{(L)}=\frac{\partial&space;E}{\partial&space;a_{k}^{(L)}}=\sum_{i}^{}\delta&space;z_{i}^{(L&plus;1)}\cdot&space;w_{ik}^{(L&plus;1)}" /><br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;&space;w_{kn}^{(L)}=\frac{\partial&space;E}{\partial&space;w_{kn}^{(L)}}=\delta&space;z_{k}^{(L)}\cdot&space;a_{n}^{(L-1)}" /><br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;&space;b_{k}^{(L)}=\frac{\partial&space;E}{\partial&space;b_{k}^{(L)}}=\delta&space;z_{k}^{(L)}" /><br>
+</p>
+
+### Matrix form (single input)
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;z^{(last)}" />&nbsp;&nbsp;&nbsp;depends on loss function<br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;z^{(L)}=\delta&space;a^{(L)}\odot&space;h^{(L)^{'}}(z_{k}^{(L)})" /><br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;a^{(L)}=w^{(L&plus;1)^{T}}\delta&space;z^{(L&plus;1)}" /><br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;w^{(L)}=\delta&space;z^{(L)}a^{(L-1)^{T}}" /><br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;b^{(L)}=\delta&space;z^{(L)}" /><br>
 </p>
