@@ -35,3 +35,11 @@ This repository is my hobby project. It consists of low-level implementation of 
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;w^{(L)}=\frac{1}{m}\odot&space;&space;\delta&space;z^{(L)^{T}}a^{(L-1)}" /><br>
   <img src="https://latex.codecogs.com/svg.image?\large&space;\delta&space;b^{(L)}=\frac{1}{m}\sum_{m}&space;\delta&space;z^{(L)}" /><br>
 </p>
+
+# Gradient Descent
+As the objective is to minimize the loss, the parameters should minus their corresponding gradients.
+### Matrix form (batch/single input)
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\large&space;w^{(L)}:=w^{(L)}-\alpha&space;\delta&space;w^{(L)}" /><br>
+  <img src="https://latex.codecogs.com/svg.image?\large&space;b^{(L)}:=b^{(L)}-\alpha&space;\delta&space;b^{(L)}" /><br>
+</p>
